@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+
+:root {
+  --progress-color: #ffffff;
+}
+
+@media (prefers-color-scheme: white) {
+  :root {
+    --progress-color: #000;
+  }
+}
+
+body {
+  font-family: "InterMedium", sans-serif;
+}
+
+.active{
+    width: 50px;
+    border-radius: 10px;
+}
+.community-animate{
+  animation-delay: 2s !important;
+}
