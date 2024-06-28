@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export function Header() {
   return (
-    <header>
+    <header className="mt-7">
       <nav>
         <ul className="flex w-full flex-row justify-center gap-[30px] p-4">
           <li className="w-fit p-2">
