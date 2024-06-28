@@ -11,7 +11,11 @@ const config: Config = {
   theme: {
     extend: {
       spacing: {
-        "container-x": "80px",
+        container: "80px",
+      },
+      backgroundImage: {
+        "hero-header": "url('/images/hero_header.svg')",
+        "hero-banner": "url('/images/hero_banner.svg')",
       },
     },
     screens: {

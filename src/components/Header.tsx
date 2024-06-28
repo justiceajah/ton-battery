@@ -1,8 +1,13 @@
 import Link from "next/link";
+import GlowingEllipse from "@/assets/images/glowing_ellipse.svg";
+import Image from "next/image";
 
 export function Header() {
   return (
-    <header className="mt-7">
+    <header className="relative mt-7">
+      <div className="h-[1700px] w-full absolute z-0 -top-72 left-0">
+        <Image src={GlowingEllipse} fill alt="glowing ellipse" />
+      </div>
       <nav>
         <ul className="flex w-full flex-row justify-center gap-[30px] p-4">
           <li className="w-fit p-2">

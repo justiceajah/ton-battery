@@ -24,7 +24,7 @@ export default function RootLayout({
       <body className={inter.className}>
         <Providers>
           <Header />
-          <main className="z-[20]">{children}</main>
+          <main className="">{children}</main>
           <footer></footer>
         </Providers>
       </body>
