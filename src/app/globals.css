@@ -23,3 +23,12 @@ body {
 .community-animate {
   animation-delay: 2s !important;
 }
+
+.button-border {
+  border: 1px solid;
+  border-image-source: radial-gradient(
+    50% 928.6% at 50% 50%,
+    rgba(255, 255, 255, 0.6) 0%,
+    rgba(255, 255, 255, 0) 100%
+  );
+}

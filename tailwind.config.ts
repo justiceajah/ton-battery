@@ -9,7 +9,15 @@ const config: Config = {
     "./node_modules/@nextui-org/theme/dist/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      spacing: {
+        container: "80px",
+      },
+      backgroundImage: {
+        "hero-header": "url('/images/hero_header.svg')",
+        "hero-banner": "url('/images/hero_banner.svg')",
+      },
+    },
     screens: {
       xs: "320px",
       sm: "640px",
