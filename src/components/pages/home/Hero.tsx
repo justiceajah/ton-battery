@@ -8,11 +8,11 @@ export function Hero() {
       {/* <div className="absolute left-0 top-0 -z-50 h-[350px] w-full  overflow-y-visible">
         <Image src={HeroHeaderImg} fill alt="hero header" objectFit="cover" />
       </div> */}
-      <section className="z-20 bg-hero-header bg-contain bg-top lg:bg-center bg-no-repeat px-container py-10 lg:bg-cover">
+      <section className="z-20 bg-hero-header bg-contain bg-top bg-no-repeat px-container py-10 lg:bg-cover lg:bg-center">
         <div className="flex w-full flex-col items-center gap-4">
           <div className="flex max-w-[450px] flex-col items-center justify-center gap-2 lg:flex-row lg:items-start">
             <Image height={72} width={72} src={LogoImg} alt="logo" />
-            <h1 className="text-center lg:text-left text-[80px] font-bold leading-none">
+            <h1 className="text-center text-[60px] font-bold leading-none lg:text-left lg:text-[80px]">
               Tonkeeper{" "}
               <span className="bg-gradient-to-r from-primary-100 to-primary-50 bg-clip-text text-transparent">
                 Battery
@@ -20,7 +20,7 @@ export function Hero() {
             </h1>
           </div>
 
-          <p className="text-lg font-semibold">
+          <p className="text-lg text-center font-semibold">
             Cryptocurrency interaction made simple and convenient
           </p>
 
