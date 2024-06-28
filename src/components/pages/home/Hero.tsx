@@ -8,9 +8,9 @@ export function Hero() {
       {/* <div className="absolute left-0 top-0 -z-50 h-[350px] w-full  overflow-y-visible">
         <Image src={HeroHeaderImg} fill alt="hero header" objectFit="cover" />
       </div> */}
-      <section className="z-20 bg-hero-header bg-cover bg-center px-container py-10">
+      <section className="z-20 bg-hero-header bg-contain bg-top lg:bg-center bg-no-repeat px-container py-10 lg:bg-cover">
         <div className="flex w-full flex-col items-center gap-4">
-          <div className="flex max-w-[450px] flex-row items-start justify-center gap-2">
+          <div className="flex max-w-[450px] flex-col items-center justify-center gap-2 lg:flex-row lg:items-start">
             <Image height={72} width={72} src={LogoImg} alt="logo" />
             <h1 className="hei text-left text-[80px] font-bold leading-none">
               Tonkeeper{" "}
@@ -53,8 +53,8 @@ export function Hero() {
           </button>
         </div>
       </section>
-      <div className="relative -mt-20">
-        <div className="bg-hero-banner h-[500px] w-full bg-cover"></div>
+      <div className="relative -mt-14 lg:-mt-20">
+        <div className="bg-hero-banner h-[400px] w-full bg-contain bg-top bg-no-repeat lg:h-[500px] lg:bg-cover"></div>
       </div>
     </div>
   );

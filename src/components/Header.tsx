@@ -9,7 +9,7 @@ export function Header() {
         <Image src={GlowingEllipse} fill alt="glowing ellipse" />
       </div>
       <nav>
-        <ul className="flex w-full flex-row justify-center gap-[30px] p-4">
+        <ul className="flex w-full flex-col lg:flex-row justify-center gap-[30px] p-4">
           <li className="w-fit p-2">
             <Link href="/">FAQ</Link>
           </li>
