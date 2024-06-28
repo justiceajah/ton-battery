@@ -16,6 +16,7 @@ const config: Config = {
       backgroundImage: {
         "hero-header": "url('/images/hero_header.svg')",
         "hero-banner": "url('/images/hero_banner.svg')",
+        "swap-milky-way": "url('/images/milky_way.svg')",
       },
     },
     screens: {
