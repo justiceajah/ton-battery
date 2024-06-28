@@ -2,9 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-
-
-
 :root {
   --progress-color: #ffffff;
 }
@@ -19,10 +16,10 @@ body {
   font-family: "InterMedium", sans-serif;
 }
 
-.active{
-    width: 50px;
-    border-radius: 10px;
+.active {
+  width: 50px;
+  border-radius: 10px;
 }
-.community-animate{
+.community-animate {
   animation-delay: 2s !important;
 }
