@@ -12,7 +12,7 @@ export function Hero() {
         <div className="flex w-full flex-col items-center gap-4">
           <div className="flex max-w-[450px] flex-col items-center justify-center gap-2 lg:flex-row lg:items-start">
             <Image height={72} width={72} src={LogoImg} alt="logo" />
-            <h1 className="hei text-left text-[80px] font-bold leading-none">
+            <h1 className="text-center lg:text-left text-[80px] font-bold leading-none">
               Tonkeeper{" "}
               <span className="bg-gradient-to-r from-primary-100 to-primary-50 bg-clip-text text-transparent">
                 Battery
