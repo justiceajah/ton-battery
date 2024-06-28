@@ -33,8 +33,16 @@ const config: Config = {
         dark: {
           // layout: {}, // dark theme layout tokens
           colors: {
-            primary: {},
+            background: "#10161F",
+            primary: {
+              "50": "#094065",
+              "100": "#1381CB",
+              "200": "#005EEB",
+              "300": "#29EAC7",
+            },
             secondary: {},
+            content3: "#CFCCCC",
+            content4: "#BDBABA",
           }, // dark theme colors
         },
       },
