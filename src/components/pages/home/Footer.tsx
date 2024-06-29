@@ -10,13 +10,13 @@ export function Footer() {
           Get Newsletter
         </h3>
 
-        <p className="mb-[35px] w-fit text-2xl">
+        <p className="mb-[35px] w-full text-center lg:text-left text-2xl">
           Get to know the next big thing on Tonkeeper
         </p>
 
         <input
           type="text"
-          className="mb-7 w-[40vw] appearance-none rounded-2xl border border-[#595858] px-2 py-[14px]"
+          className="mb-7 w-[100%] md:w-[40vw] appearance-none rounded-2xl border border-[#595858] px-2 py-[14px]"
           placeholder="Enter your email"
         />
 
@@ -99,12 +99,12 @@ export function Footer() {
           </Link>
         </div>
 
-        <div>
+        <div className=" w-full flex items-center justify-center lg:w-fit">
           <Image src={TopAppp} alt="number one app in ton app" />
         </div>
       </div>
 
-      <div className="m-10 flex flex-row flex-wrap lg:gap-6 items-center justify-center">
+      <div className="my-10 flex flex-row flex-wrap lg:gap-6 items-center justify-center  w-full">
         <p className="grow">© 2024 Tonkeeper. All rights reserved.</p>
         <p className="text-[#8994A3]">
           All trademarks are the property of their respective owners.
