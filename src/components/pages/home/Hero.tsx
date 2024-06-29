@@ -5,7 +5,7 @@ import HeroBanner from "@/assets/images/hero_banner.svg";
 export function Hero() {
   return (
     <div className="relative">
-      <section className="z-20 px-sm-container lg:px-container py-10 lg:bg-cover lg:bg-center">
+      <section className="px-sm-container z-20 py-10 lg:bg-cover lg:bg-center lg:px-container">
         <div className="flex w-full flex-col items-center gap-4">
           <div className="flex max-w-[450px] flex-col items-center justify-center gap-2 lg:flex-row lg:items-start">
             <Image height={72} width={72} src={LogoImg} alt="logo" />
@@ -50,10 +50,10 @@ export function Hero() {
           </button>
         </div>
       </section>
-      <div className="relative overflow-visible">
-        <div className="h-[400px] bg-contain bg-top bg-no-repeat lg:h-[1000px] lg:bg-cover">
+      <div className="relative overflow-visible -z-[100]">
+        <div className="h-[400px] bg-contain bg-top bg-no-repeat lg:h-[1000px] lg:bg-cover xl:h-[850px]">
           <Image
-            className="-mt-14 h-full lg:-mt-80"
+            className="-mt-[150px] h-full sm:-mt-14 lg:-mt-80"
             src={HeroBanner}
             alt="banner"
             fill

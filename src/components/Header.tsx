@@ -1,7 +1,7 @@
 "use client";
-import Link from "next/link";
 import GlowingEllipse from "@/assets/images/glowing_ellipse.svg";
 import Image from "next/image";
+import Link from "next/link";
 import { useRef, useState } from "react";
 
 export function Header() {
@@ -9,28 +9,25 @@ export function Header() {
   const navLinkRef = useRef<HTMLUListElement | null>(null);
 
   function toggleMenuVisibility() {
-    console.log("toggleMenuVisibility");
-
-    const MENU_ANIMATION_DURATION = 500;
+    // const MENU_ANIMATION_DURATION = 500;
     // If the menu is not visible, set it to visible
     if (!isMenuVisible) {
       setIsMenuVisible(true);
     } else {
       // If the menu is visible, add some animation classes to the nav links
-      navLinkRef.current?.classList.remove("nav-links__animate-in");
-      navLinkRef.current?.classList.add("nav-links__animate-out");
-
+      // navLinkRef.current?.classList.remove("nav-links__animate-in");
+      // navLinkRef.current?.classList.add("nav-links__animate-out");
       // After 500 milliseconds, set the menu to invisible and remove the animation classes
-      setTimeout(() => {
-        setIsMenuVisible(false);
-        navLinkRef.current?.classList.add("nav-links__animate-in");
-      }, MENU_ANIMATION_DURATION);
+      // setTimeout(() => {
+      setIsMenuVisible(false);
+      //   navLinkRef.current?.classList.add("nav-links__animate-in");
+      // }, MENU_ANIMATION_DURATION);
     }
   }
 
   return (
     <header className="relative mt-7">
-      <div className="absolute -top-72 left-0 -z-50 h-[1700px] w-full">
+      <div className="absolute -top-[600px] lg:-top-72 left-0 -z-50 h-[1700px] w-full">
         <Image src={GlowingEllipse} fill alt="glowing ellipse" />
       </div>
       <nav className="hidden lg:flex">
@@ -56,11 +53,9 @@ export function Header() {
         </ul>
       </nav>
 
-      <nav className="px-sm-container z-50 flex lg:hidden lg:px-container">
-        <div className="lg:hidden w-full flex flex-row items-end">
-          <button
-            onClick={toggleMenuVisibility}
-          >
+      <nav className="px-sm-container relative z-[100] flex lg:hidden lg:px-container">
+        <div className="flex w-full flex-row items-end justify-end lg:hidden">
+          <button onClick={toggleMenuVisibility}>
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="24"
@@ -82,7 +77,7 @@ export function Header() {
           {isMenuVisible && (
             <ul
               ref={navLinkRef}
-              className={`nav-links nav-links__animate-in dark:bg-gray-700 dark:text-white`}
+              className={`nav-links dark:bg-gray-700 dark:text-white`}
             >
               {/* Display a button with an icon to close the menu */}
               <li className="lg:hidden">
@@ -105,25 +100,22 @@ export function Header() {
                 </button>
               </li>
               <li onClick={toggleMenuVisibility}>
-                <Link href={"/articles"}>Articles</Link>
+                <Link href={"/"}>FAQ</Link>
               </li>
               <li onClick={toggleMenuVisibility}>
-                <Link href={"/articles/series"}>Series</Link>
+                <Link href={"/"}>Support</Link>
               </li>
-              {/* <li onClick={toggleMenuVisibility}>
-              <Link href={"/book-notes"}>Book Notes</Link>
-            </li> */}
               <li onClick={toggleMenuVisibility}>
-                <Link href={"/projects"}>Projects</Link>
+                <Link href={"/"}>Documentation</Link>
               </li>
-              {/* <li onClick={toggleMenuVisibility}>
-              <Link href={"/videos"}>Videos</Link>
-            </li>
-            <li onClick={toggleMenuVisibility}>
-              <Link href={"/newsletter"}>Newsletter</Link>
-            </li> */}
               <li onClick={toggleMenuVisibility}>
-                <Link href={"/about"}>About</Link>
+                <Link href={"/"}>Documentation</Link>
+              </li>
+              <li onClick={toggleMenuVisibility}>
+                <Link href={"/"}>Bug Bounty</Link>
+              </li>
+              <li onClick={toggleMenuVisibility}>
+                <Link href={"/"}>Github</Link>
               </li>
             </ul>
           )}
