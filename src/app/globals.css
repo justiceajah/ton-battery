@@ -32,6 +32,19 @@ body {
   font-family: "InterMedium", sans-serif;
 }
 
+.nav-links {
+  @apply fixed right-0 top-0 flex h-full w-52 flex-col space-y-8 bg-white p-8;
+}
+
+.nav-links__animate-in {
+  transform: translateX(100%);
+  animation: slidein-right 0.5s ease forwards;
+}
+
+.nav-links__animate-out {
+  animation: slideout-right 0.5s ease forwards;
+}
+
 .active {
   width: 50px;
   border-radius: 10px;
