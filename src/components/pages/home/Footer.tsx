@@ -6,7 +6,7 @@ export function Footer() {
   return (
     <footer className="mx-sm-container mt-20 lg:mx-container">
       <div className="mb-40 flex flex-col items-center justify-center">
-        <h3 className="mb-4 w-fit bg-gradient-to-r from-[#0E6EFF] via-[#0ED0FF] to-[#0ED4FF] bg-clip-text text-4xl font-semibold text-transparent">
+        <h3 className="mb-4 w-fit bg-gradient-to-r from-[#0E6EFF] via-[#0ED0FF] to-[#0ED4FF] bg-clip-text text-4xl font-semibold text-transparent hover:!bg-gradient-to-r hover:!from-primary-50 hover:!bg-primary-100">
           Get Newsletter
         </h3>
 
@@ -20,7 +20,7 @@ export function Footer() {
           placeholder="Enter your email"
         />
 
-        <button className="flex flex-row items-center gap-2 rounded-2xl bg-gradient-to-r from-primary-50 to-primary-100 px-[25px] py-[10px]">
+        <button className="flex flex-row items-center gap-2 rounded-2xl bg-gradient-to-r from-primary-50 to-primary-100 px-[25px] py-[10px] hover:!bg-gradient-to-r hover:!from-primary-50 hover:!bg-primary-100">
           <svg
             width="25"
             height="24"
