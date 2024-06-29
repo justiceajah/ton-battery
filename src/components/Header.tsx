@@ -33,27 +33,27 @@ export function Header() {
       <nav className="hidden lg:flex">
         <ul className="w-full flex-col justify-center gap-[30px] p-4 lg:flex lg:flex-row">
           <li className="w-fit p-2">
-            <Link href="/">FAQ</Link>
+            <Link href="https://tonkeeper.helpscoutdocs.com/" target="_blank">FAQ</Link>
           </li>
           <li className="w-fit p-2">
-            <Link href="/">Support</Link>
+            <Link href="https://t.me/help_tonkeeper_bot" target="_blank">Support</Link>
           </li>
           <li className="w-fit p-2">
-            <Link href="/">Documentation</Link>
+            <Link href="https://github.com/tonkeeper/wallet-api" target="_blank">Documentation</Link>
           </li>
           <li className="w-fit p-2">
-            <Link href="/">Bug Bounty</Link>
+            <Link href="https://t.me/help_tonkeeper_bot" target="_blank">Bug Bounty</Link>
           </li>
           <li className="w-fit p-2">
-            <Link href="/">Github</Link>
+            <Link href="https://github.com/justiceajah/ton-battery.git" target="_blank">Github</Link>
           </li>
           <li className="w-fit p-2">
-            <Link href="/">Tonkeeper Battery</Link>
+            <Link href="https://tonkeeper.com/" target="_blank">Tonkeeper</Link>
           </li>
         </ul>
       </nav>
 
-      <nav className="px-sm-container relative z-[100] flex lg:hidden lg:px-container">
+      <nav className="px-sm-container relative z-[100] flex lg:hidden lg:px-container ">
         <div className="flex w-full flex-row items-end justify-end lg:hidden">
           <button onClick={toggleMenuVisibility}>
             <svg
@@ -77,7 +77,7 @@ export function Header() {
           {isMenuVisible && (
             <ul
               ref={navLinkRef}
-              className={`nav-links dark:bg-gray-700 dark:text-white`}
+              className={`nav-links   !bg-gray-700`}
             >
               {/* Display a button with an icon to close the menu */}
               <li className="lg:hidden">
@@ -100,22 +100,22 @@ export function Header() {
                 </button>
               </li>
               <li onClick={toggleMenuVisibility}>
-                <Link href={"/"}>FAQ</Link>
+                <Link href="https://tonkeeper.helpscoutdocs.com/" target="_blank">FAQ</Link>
               </li>
               <li onClick={toggleMenuVisibility}>
-                <Link href={"/"}>Support</Link>
+                <Link href="https://t.me/help_tonkeeper_bot" target="_blank">Support</Link>
               </li>
               <li onClick={toggleMenuVisibility}>
-                <Link href={"/"}>Documentation</Link>
+                <Link href="https://github.com/tonkeeper/wallet-api">Documentation</Link>
               </li>
               <li onClick={toggleMenuVisibility}>
-                <Link href={"/"}>Documentation</Link>
+                <Link href="https://t.me/help_tonkeeper_bot" target="_blank">Bug Bounty</Link>
               </li>
               <li onClick={toggleMenuVisibility}>
-                <Link href={"/"}>Bug Bounty</Link>
+                <Link href="https://github.com/justiceajah/ton-battery.git" target="_blank">Github</Link>
               </li>
               <li onClick={toggleMenuVisibility}>
-                <Link href={"/"}>Github</Link>
+                <Link href="https://tonkeeper.com/" target="_blank">TonKeeper</Link>
               </li>
             </ul>
           )}
