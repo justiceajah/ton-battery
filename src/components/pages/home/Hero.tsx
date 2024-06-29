@@ -5,10 +5,7 @@ import HeroBanner from "@/assets/images/hero_banner.svg";
 export function Hero() {
   return (
     <div className="relative">
-      {/* <div className="absolute left-0 top-0 -z-50 h-[350px] w-full  overflow-y-visible">
-        <Image src={HeroHeaderImg} fill alt="hero header" objectFit="cover" />
-      </div> */}
-      <section className="z-20 bg-hero-header bg-contain bg-top bg-no-repeat px-container py-10 lg:bg-cover lg:bg-center">
+      <section className="z-20 px-container py-10 lg:bg-cover lg:bg-center">
         <div className="flex w-full flex-col items-center gap-4">
           <div className="flex max-w-[450px] flex-col items-center justify-center gap-2 lg:flex-row lg:items-start">
             <Image height={72} width={72} src={LogoImg} alt="logo" />
@@ -20,7 +17,7 @@ export function Hero() {
             </h1>
           </div>
 
-          <p className="text-lg text-center font-semibold">
+          <p className="text-center text-lg font-semibold">
             Cryptocurrency interaction made simple and convenient
           </p>
 
@@ -53,8 +50,15 @@ export function Hero() {
           </button>
         </div>
       </section>
-      <div className="relative -mt-14 lg:-mt-20">
-        <div className="bg-hero-banner h-[400px] w-full bg-contain bg-top bg-no-repeat lg:h-[500px] lg:bg-cover"></div>
+      <div className="relative overflow-visible">
+        <div className="h-[400px] bg-contain bg-top bg-no-repeat lg:h-[1000px] lg:bg-cover">
+          <Image
+            className="-mt-14 h-full lg:-mt-80"
+            src={HeroBanner}
+            alt="banner"
+            fill
+          />
+        </div>
       </div>
     </div>
   );
