@@ -8,10 +8,10 @@ export function Hero() {
       <section className="px-sm-container z-20 py-10 lg:bg-cover lg:bg-center lg:px-container ">
         <div className="flex w-full flex-col items-center gap-4">
           <div className="flex max-w-[450px] flex-col items-center justify-center gap-2 lg:flex-row lg:items-start">
-            <Image height={72} width={72} src={LogoImg} alt="logo" />
+            <Image className="animate-pulse" height={72} width={72} src={LogoImg} alt="logo" />
             <h1 className="text-center text-[60px] font-bold leading-none lg:text-left lg:text-[80px]">
               Tonkeeper{" "}
-              <span className="bg-gradient-to-r from-primary-100 to-primary-50 bg-clip-text text-transparent">
+              <span className="bg-gradient-to-r from-primary-100 to-primary-50 bg-clip-text text-transparent transition ease-in hover:bg-gradient-to-r hover:from-primary-50 hover:bg-primary-100">
                 Battery
               </span>
             </h1>
@@ -21,7 +21,7 @@ export function Hero() {
             Cryptocurrency interaction made simple and convenient
           </p>
 
-          <button className="flex flex-row items-center gap-2 rounded-2xl bg-gradient-to-r from-primary-50 to-primary-100 px-[25px] py-[10px]">
+          <button className="flex flex-row items-center gap-2 rounded-2xl bg-gradient-to-r from-primary-50 to-primary-100 px-[25px] py-[10px] transition ease-in hover:bg-gradient-to-r hover:from-primary-50 hover:bg-primary-100">
             <svg
               width="25"
               height="24"
@@ -46,12 +46,12 @@ export function Hero() {
                 fill="#CCD2E3"
               />
             </svg>
-            <span className="text-lg font-black">Explore Now</span>
+            <span className="text-lg font-black ">Explore Now</span>
           </button>
         </div>
       </section>
       <div className="relative w-full mt-48">
-      <div className="absolute -top-60 left-[0px] overflow-visible -z-[100]">
+      <div className="absolute -top-60  lg:-top-[200px]  left-[0px] overflow-visible -z-[100]">
         <div className="h-[400px] bg-contain bg-top bg-no-repeat lg:h-[1000px] lg:bg-cover xl:h-[850px]">
           <Image
             className="-mt-[150px] h-full sm:-mt-14 lg:-mt-80 lg:max-w-[100%]"

@@ -15,9 +15,9 @@ export function Pill({
   const roundedClasses = text ? "rounded-[28px]" : "rounded-full";
 
   return (
-    <div className={`${baseClasses} ${colorClasses} ${roundedClasses}`}>
+    <div className={`${baseClasses} ${colorClasses} ${roundedClasses} cursor-pointer`}>
       <Image src={imgSrc} alt="brand logo" width={28} height={28} />
       {text ? <p className="text-xl">{text}</p> : null}
     </div>
   );
-}
+} 

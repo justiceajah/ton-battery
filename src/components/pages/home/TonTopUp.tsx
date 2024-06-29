@@ -9,6 +9,9 @@ const TonTopUp = () => {
       <ColoredSectionHeader headerText="HOW TO TOP-UP BATTERY" />
 
       <div className="mx-sm-container  mx-container mt-10">
+        {/* <div className="h-[400px]">
+        <iframe className="bg-transparent" src='https://my.spline.design/untitled-c59f560cdcff405045b29b6c75d5fb15/'  width='100%' height='100%'></iframe>
+        </div> */}
         <div className="rounded-[70px] bg-[#D9D9D912] bg-opacity-[0.07] p-11 text-white">
           <div className="flex flex-col justify-between gap-6 lg:flex-row">
             <div className="flex w-full items-center justify-center lg:w-1/2">
