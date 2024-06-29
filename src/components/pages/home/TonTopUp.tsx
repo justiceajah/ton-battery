@@ -5,7 +5,7 @@ import Image from "next/image";
 
 const TonTopUp = () => {
   return (
-    <div className="relative mt-[80px] md:mt-0">
+    <div className="relative mt-[80px] md:mt-0 lg:static lg:mt-40">
       <ColoredSectionHeader headerText="HOW TO TOP-UP BATTERY" />
 
       <div className="mx-sm-container  mx-container mt-10">
