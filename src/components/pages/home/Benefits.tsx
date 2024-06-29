@@ -7,7 +7,7 @@ import ColoredSectionHeader from '../../ColoredSectionHeader'
 
 const Benefits = () => {
     return (
-        <div className='relative mt-[120px] md:mt-0 '>
+        <div className='relative mt-[120px] md:mt-0 lg:top-40 '>
             <div className='benefits-header px-2'>
                 <ColoredSectionHeader headerText={"HERE ARE THE BENEFITS OF THE BATTERY"}/>
                 <h4 className=' text-[0.8rem] text-center mt-2 md:text-[0.88rem] lg:text-[1.3rem]'>Currently, you can use the Battery for the following operations</h4>

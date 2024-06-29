@@ -10,7 +10,7 @@ import EdgeBrand from "@/assets/images/edge.svg";
 
 export function CryptoIsTheRedPill() {
   return (
-    <div className="mx-sm-container mt-20 text-white lg:mx-container">
+    <div className="mx-sm-container mt-20 text-white lg:mx-container lg:mt-40">
       <div className="mb-14">
         <h2 className="mb-8 text-4xl font-bold lg:text-5xl">
           Crypto is the red pill
