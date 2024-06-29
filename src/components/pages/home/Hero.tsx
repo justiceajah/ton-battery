@@ -5,7 +5,7 @@ import HeroBanner from "@/assets/images/hero_banner.svg";
 export function Hero() {
   return (
     <div className="relative">
-      <section className="z-20 px-container py-10 lg:bg-cover lg:bg-center">
+      <section className="z-20 px-sm-container lg:px-container py-10 lg:bg-cover lg:bg-center">
         <div className="flex w-full flex-col items-center gap-4">
           <div className="flex max-w-[450px] flex-col items-center justify-center gap-2 lg:flex-row lg:items-start">
             <Image height={72} width={72} src={LogoImg} alt="logo" />

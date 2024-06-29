@@ -11,6 +11,7 @@ const config: Config = {
   theme: {
     extend: {
       spacing: {
+        'sm-container': '40px',
         container: "80px",
       },
       backgroundImage: {
