@@ -5,7 +5,7 @@ import "./globals.css";
 import Providers from "./providers";
 
 export const metadata: Metadata = {
-  title: "Bone Cracking",
+  title: "Ton-keeper",
   description: "Task page",
 };
 
