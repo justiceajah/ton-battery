@@ -9,31 +9,15 @@ export function Pill({
   text?: string;
   color: "white" | "black";
 }) {
+  const baseClasses = "flex w-fit flex-row gap-2 px-7 py-[14px]";
+  const colorClasses =
+    color === "white" ? "bg-white text-black" : "bg-[#1D2633] text-white";
+  const roundedClasses = text ? "rounded-[28px]" : "rounded-full";
+
   return (
-    <>
-      {color === "white" ? (
-        <div
-          className={
-            text
-              ? "flex w-fit flex-row gap-2 rounded-[28px] bg-white px-7 py-[14px] text-black"
-              : "flex w-fit flex-row gap-2 rounded-full bg-white px-7 py-[14px] text-black"
-          }
-        >
-          <Image src={imgSrc} alt="brand logo" width={28} height={28} />
-          {text ? <p className="text-xl">{text}</p> : null}
-        </div>
-      ) : (
-        <div
-          className={
-            text
-              ? "flex w-fit flex-row gap-2 rounded-[28px] bg-[#1D2633] px-7 py-[14px] text-white"
-              : "flex w-fit flex-row gap-2 rounded-full bg-[#1D2633] px-7 py-[14px] text-white"
-          }
-        >
-          <Image src={imgSrc} alt="brand logo" width={28} height={28} />
-          {text ? <p className="text-xl">{text}</p> : null}
-        </div>
-      )}
-    </>
+    <div className={`${baseClasses} ${colorClasses} ${roundedClasses}`}>
+      <Image src={imgSrc} alt="brand logo" width={28} height={28} />
+      {text ? <p className="text-xl">{text}</p> : null}
+    </div>
   );
 }
