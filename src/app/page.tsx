@@ -5,6 +5,7 @@ import Image from "next/image";
 import HeroHeaderImg from "@/assets/images/hero_header.svg";
 import TonTopUp from "@/components/pages/home/TonTopUp";
 import { CryptoIsTheRedPill } from "@/components/pages/home/CryptoIsRedPill";
+import { Footer } from "@/components/pages/home/Footer";
 
 export default function Home() {
   return (
@@ -23,6 +24,7 @@ export default function Home() {
       <Benefits />
       <TonTopUp />
       <CryptoIsTheRedPill />
+      <Footer />
     </div>
   );
 }
