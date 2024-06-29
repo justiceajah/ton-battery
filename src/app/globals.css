@@ -11,13 +11,20 @@
     --progress-color: #000;
   }
 }
+@media (max-width:1366px) {
+   .line-holder img{
+    width: 200px;
+    max-width: 200px !important;
+   }
+
+}
 
 .benefit-bg-images {
-  @apply bg-cover bg-top;
+  @apply bg-cover  ;
   display: inline-block;
   background: url('/images/milky_way.svg')  left top no-repeat, url('/images/milky_way.svg')  right bottom no-repeat;
- 
-   
+  background-size: contain;
+   background-position-x: 150%;
 }
 
 

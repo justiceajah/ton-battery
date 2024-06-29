@@ -1,6 +1,7 @@
-import Benefits from "@/components/tonkeeper-benefits/Benefits";
+import Benefits from "@/components/pages/home/Benefits";
 import About from "@/components/pages/home/About";
 import { Hero } from "@/components/pages/home/Hero";
+import TonTopUp from "@/components/pages/home/TonTopUp";
 
 export default function Home() {
   return (
@@ -8,6 +9,7 @@ export default function Home() {
       <Hero />
       <About />
       <Benefits/>
+      <TonTopUp/>
     </div>
   );
 }
