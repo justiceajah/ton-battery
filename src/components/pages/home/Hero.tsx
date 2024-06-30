@@ -1,6 +1,5 @@
-import Image from "next/image";
 import LogoImg from "@/assets/images/logo.svg";
-import HeroBanner from "@/assets/images/hero_banner.svg";
+import Image from "next/image";
 
 export function Hero() {
   return (
@@ -23,7 +22,7 @@ export function Hero() {
             </h1>
           </div>
 
-          <p className="text-center text-base lg:text-lg font-semibold">
+          <p className="text-center text-base font-semibold lg:text-lg">
             Cryptocurrency interaction made simple and convenient
           </p>
 
@@ -52,7 +51,7 @@ export function Hero() {
                 fill="#CCD2E3"
               />
             </svg>
-            <span className="text-base lg:text-lg font-black">Explore Now</span>
+            <span className="text-base font-black lg:text-lg">Explore Now</span>
           </button>
         </div>
       </section>
