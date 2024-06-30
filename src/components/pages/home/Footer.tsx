@@ -10,7 +10,7 @@ export function Footer() {
           Get Newsletter
         </h3>
 
-        <p className="mb-[35px] w-full text-center text-xl lg:text-2xl lg:text-left">
+        <p className="mb-[35px] w-full text-center text-xl md:w-fit lg:text-2xl lg:text-left">
           Get to know the next big thing on Tonkeeper
         </p>
 
