@@ -52,49 +52,49 @@ export function Footer() {
       <div className="flex flex-row flex-wrap gap-16 lg:justify-between">
         <div className="flex flex-col gap-5">
           <h4 className="font-medium">Company</h4>
-          <Link href="/about" className="text-[#8994A3]">
+          <Link href="/" className="text-[#8994A3]">
             News
           </Link>
-          <Link href="/about" className="text-[#8994A3]">
+          <Link href="/" className="text-[#8994A3]">
             Chat
           </Link>
-          <Link href="/about" className="text-[#8994A3]">
+          <Link href="/" className="text-[#8994A3]">
             Twitter
           </Link>
         </div>
 
         <div className="flex flex-col gap-5">
           <h4 className="font-medium">Resources</h4>
-          <Link href="/about" className="text-[#8994A3]">
+          <Link href="/" className="text-[#8994A3]">
             FAQ
           </Link>
-          <Link href="/about" className="text-[#8994A3]">
+          <Link href="/" className="text-[#8994A3]">
             Support
           </Link>
-          <Link href="/about" className="text-[#8994A3]">
+          <Link href="/" className="text-[#8994A3]">
             Suggest A Feature
           </Link>
         </div>
 
         <div className="flex flex-col gap-5">
           <h4 className="font-medium">Developers</h4>
-          <Link href="/about" className="text-[#8994A3]">
+          <Link href="/" className="text-[#8994A3]">
             Documentation
           </Link>
-          <Link href="/about" className="text-[#8994A3]">
+          <Link href="/" className="text-[#8994A3]">
             Bug Bounty
           </Link>
-          <Link href="/about" className="text-[#8994A3]">
+          <Link href="/" className="text-[#8994A3]">
             Github
           </Link>
         </div>
 
         <div className="flex flex-col gap-5">
           <h4 className="font-medium">Legal</h4>
-          <Link href="/about" className="text-[#8994A3]">
+          <Link href="/" className="text-[#8994A3]">
             Terms
           </Link>
-          <Link href="/about" className="text-[#8994A3]">
+          <Link href="/" className="text-[#8994A3]">
             Privacy
           </Link>
         </div>
