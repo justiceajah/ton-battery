@@ -6,21 +6,21 @@ export function Footer() {
   return (
     <footer className="mx-sm-container mt-20 lg:mx-container">
       <div className="mb-40 flex flex-col items-center justify-center">
-        <h3 className="mb-4 w-fit bg-gradient-to-r from-[#0E6EFF] via-[#0ED0FF] to-[#0ED4FF] bg-clip-text text-4xl font-semibold text-transparent hover:!bg-gradient-to-r hover:!from-primary-50 hover:!bg-primary-100">
+        <h3 className="mb-4 w-fit bg-gradient-to-r from-[#0E6EFF] via-[#0ED0FF] to-[#0ED4FF] bg-clip-text text-2xl lg:text-4xl font-semibold text-transparent hover:!bg-primary-100 hover:!bg-gradient-to-r hover:!from-primary-50">
           Get Newsletter
         </h3>
 
-        <p className="mb-[35px] w-full text-center lg:text-left text-2xl">
+        <p className="mb-[35px] w-full text-center text-xl lg:text-2xl lg:text-left">
           Get to know the next big thing on Tonkeeper
         </p>
 
         <input
           type="text"
-          className="mb-7 w-[100%] md:w-[40vw] appearance-none rounded-2xl border border-[#595858] px-2 py-[14px]"
+          className="mb-7 w-[100%] appearance-none rounded-2xl border border-[#595858] px-2 py-[14px] md:w-[40vw]"
           placeholder="Enter your email"
         />
 
-        <button className="flex flex-row items-center gap-2 rounded-2xl bg-gradient-to-r from-primary-50 to-primary-100 px-[25px] py-[10px] hover:!bg-gradient-to-r hover:!from-primary-50 hover:!bg-primary-100">
+        <button className="flex flex-row items-center gap-2 rounded-2xl bg-gradient-to-r from-primary-50 to-primary-100 px-[25px] py-[10px] hover:!bg-primary-100 hover:!bg-gradient-to-r hover:!from-primary-50">
           <svg
             width="25"
             height="24"
@@ -45,7 +45,7 @@ export function Footer() {
               fill="#CCD2E3"
             />
           </svg>
-          <span className="text-lg font-black">Explore Now</span>
+          <span className="text-lg font-black">Subscribe</span>
         </button>
       </div>
 
@@ -99,12 +99,12 @@ export function Footer() {
           </Link>
         </div>
 
-        <div className=" w-full flex items-center justify-center lg:w-fit">
+        <div className="flex w-full items-center justify-center lg:w-fit">
           <Image src={TopAppp} alt="number one app in ton app" />
         </div>
       </div>
 
-      <div className="my-10 flex flex-row flex-wrap lg:gap-6 items-center justify-center  w-full">
+      <div className="my-10 flex w-full flex-row flex-wrap items-center justify-center lg:gap-6">
         <p className="grow">© 2024 Tonkeeper. All rights reserved.</p>
         <p className="text-[#8994A3]">
           All trademarks are the property of their respective owners.
