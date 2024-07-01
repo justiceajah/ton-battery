@@ -1,6 +1,6 @@
 
 import styles from "./pages/home/styles/Banner.module.css";
-const Marquee = ({color}:{color: string}) => {
+const Marquee = () => {
   return (
     <div
     className={
