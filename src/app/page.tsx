@@ -6,11 +6,12 @@ import HeroHeaderImg from "@/assets/images/hero_header.svg";
 import TonTopUp from "@/components/pages/home/TonTopUp";
 import { CryptoIsTheRedPill } from "@/components/pages/home/CryptoIsRedPill";
 import { Footer } from "@/components/pages/home/Footer";
+import { Banner } from "@/components/pages/home/Banner";
 
 export default function Home() {
   return (
     <div className="relative w-full overflow-hidden">
-      <div className="absolute left-0 top-4 -z-50 h-[350px] w-full overflow-y-visible lg:-top-8">
+      <div className="absolute left-0 top-4 -z-50 h-[452px] w-full overflow-y-visible lg:-top-8">
         <Image
           src={HeroHeaderImg}
           height={452}
@@ -20,6 +21,7 @@ export default function Home() {
         />
       </div>
       <Hero />
+      <Banner />
       <About />
       <Benefits />
       <TonTopUp />

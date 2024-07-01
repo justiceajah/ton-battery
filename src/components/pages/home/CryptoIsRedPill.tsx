@@ -12,10 +12,10 @@ export function CryptoIsTheRedPill() {
   return (
     <div className="mx-sm-container mt-20 text-white lg:mx-container lg:mt-40">
       <div className="mb-14">
-        <h2 className="mb-8 text-4xl font-bold lg:text-5xl">
+        <h2 className="mb-8 text-3xl font-bold lg:text-5xl">
           Crypto is the red pill
         </h2>
-        <p className="text-lg font-semibold text-[#8994A3]">
+        <p className="text-base font-semibold text-[#8994A3] lg:text-lg">
           The era of human exploitation is over. Exit the matrix of central
           banking dictatorship, surveillance of credit card companies and
           digital walled gardens. Join the new era of borderless digital economy
