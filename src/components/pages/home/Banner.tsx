@@ -2,7 +2,7 @@ import styles from "./styles/Banner.module.css";
 
 export function Banner() {
   return (
-    <div className="my-20 -rotate-12">
+    <div className="mb-20 -rotate-12 relative border-2 border-[#175776] right-10 bg-[#123445] w-full  min-w-[calc(100vw+20vw)] overflow-x-hidden">
       <div
         className={
           "flex w-fit min-w-[calc(100vw+20vw)] -rotate-12 flex-row items-center gap-10 bg-white py-5 " +
